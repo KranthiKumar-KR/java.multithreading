@@ -1,4 +1,4 @@
-package countdownDemo;
+package joinInterrupt;
 
 import practice.java.kranthi.ThreadColor;
 
@@ -47,6 +47,9 @@ but if 'i' is not a local variable (instance variable ) then things will be diff
          * or code that may cause thread interference.
          * in this case this for loop is causing thread interference. so we synchronized it.
          * sometimes we may need to synchronize a complete class or a method or a variable or a static block or a instance block
+         *
+         * but if there are multiple members that are synchronized, lets say three methods are declared as synchronized, hence at a time only one synchronized method will be running
+         * only on one thread
          **/
         synchronized (this) {
         for (i = 0; i < 10; i++) {

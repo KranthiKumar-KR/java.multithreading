@@ -1,4 +1,4 @@
-package countdownDemo;
+package joinInterrupt;
 
 public class CountdownThread extends Thread {
 
